@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import "./styles/BadgeNew.css";
-import NavBar from "../components/NavBar";
+//import NavBar from "../components/NavBar";
 import header from "../images/badge-header.svg";
 import Badge from "../components/Badge";
 import BadgeForm from "../components/BadgeForm";
@@ -27,8 +27,7 @@ class BadgeNew extends Component {
   };
   render() {
     return (
-      <div>
-        <NavBar />
+      <React.Fragment>
         <div className="BadgeNew__hero">
           <img className="img-fluid" src={header} alt="" />
         </div>
@@ -54,7 +53,7 @@ class BadgeNew extends Component {
             </div>
           </div>
         </div>
-      </div>
+      </React.Fragment>
     );
   }
 }
